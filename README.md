@@ -16,7 +16,11 @@ $ mvn install
 ### Correr o projeto
 ```
 $ mvn package
-$ mvn compile exec:java -Dexec.mainClass="ua.deti.ies.WeatherStarter.java"
+$ mvn exec:java -Dexec.mainClass="ua.deti.ies.WeatherStarter"
+
+-> Com argumentos
+$ mvn exec:java -Dexec.mainClass="ua.deti.WeatherStarter" -Dexec.args="1010500
+
 ```
 
 ### Simple pom
@@ -119,14 +123,21 @@ Having come source code and a Dockerfile, one can build it's own image, and make
 
 Being in the directory with the Dockerfile:
 ```
-$ docker build -t postgresbasic .
+$ docker build -t getting-started .
 ```
 
 This creates our own costum PostgreSQL image, using our Dockerfile.
 
 ## Running your own images
 ```
-$ docker run --name pg-docker -d -p 5432:5432 -e PGDATA=/tmp -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgresbasic
+$ docker run -dp 127.0.0.1:3000:3000 getting-started
+```
+
+## Then go to http://localhost:3000
+
+## list containers 
+```
+$ docker ps
 ```
 
 There are a couple of flags in the command above:
@@ -153,14 +164,14 @@ Docker Compose is a tool that was developed to help define and share multi-conta
 
 Full tutorial: https://docs.docker.com/compose/gettingstarted/
 
-Start docker-compose:
+Start docker compose:
 ```
-$ docker-compose up
+$ docker compose up
 ```
 
-Stop docker-compose:
+Stop docker compose:
 ```
-$ docker-compose stop
+$ docker compose down
 ```
 
 

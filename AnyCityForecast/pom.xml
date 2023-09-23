@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- define the context and the project id -->
-    <groupId>ua.labs</groupId>
-    <artifactId>ProjectX</artifactId>
-
+    <groupId>ua.deti.ies</groupId>
+    <artifactId>AnyCityForecast</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -20,9 +19,15 @@
       </dependency>
       <!-- dependencia do ipmaApiClient com este projeto -->
         <dependency>
-            <groupId>ua.deti</groupId>
+            <groupId>ua.deti.ies</groupId>
             <artifactId>lab1</artifactId>
-            <version>1.0-SNAPSHOT</version> 
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     

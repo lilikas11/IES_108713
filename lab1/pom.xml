@@ -24,12 +24,22 @@
       <artifactId>converter-gson</artifactId>
       <version>2.3.0</version>
   </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.14.1</version>
+  </dependency>
+  <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.14.1</version>
+  </dependency>
   </dependencies>
 
   <developers>
       <developer>
-          <id>jason</id>
-          <name>Jason Van Zyl</name>
+          <id>lilikas11</id>
+          <name>Liliana Ribeiro</name>
           <email>jason@maven.org</email>
           <url>http://www.sonatype.com</url>
           <organization>Sonatype</organization>
